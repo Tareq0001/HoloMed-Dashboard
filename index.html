@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>HoloMed | AI Dashboard</title><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+      <div class="sidebar">
+        <div class="logo">Holo<span>Med</span></div>
+        <nav><a href="#" class="active">Dashboard</a><a href="#">Patients</a><a href="#">AI Scans</a></nav>
+      </div>
+      <div class="main-content">
+        <div class="header">
+          <h2>Emergency Ward Monitor</h2>
+          <div class="profile"><div class="avatar">Dr</div> <span>Dr. Aboushi</span></div>
+        </div>
+        
+        <div class="dashboard-grid">
+          <div class="card col-2">
+            <div class="card-header"><h3>Live Vitals (Bed 4)</h3><span class="status critical">CRITICAL</span></div>
+            <div class="vitals-display">
+              <div class="vital"><p>Heart Rate</p><h1 class="text-cyan">142 <small>bpm</small></h1></div>
+              <div class="vital"><p>Oxygen (SpO2)</p><h1 class="text-red">88 <small>%</small></h1></div>
+              <div class="vital"><p>Blood Pressure</p><h1 class="text-cyan">140/90</h1></div>
+            </div>
+            <div class="ecg-line"></div>
+          </div>
+          
+          <div class="card ai-card">
+            <div class="card-header"><h3>AI Diagnostics</h3><span class="icon">🤖</span></div>
+            <div class="scan-image">MRI Scan Analyzing...</div>
+            <p class="ai-alert">Anomaly detected in Left Ventricle. Confidence: 98.4%</p>
+            <button class="btn-cyan">View 3D Model</button>
+          </div>
+          
+          <div class="card col-3">
+            <div class="card-header"><h3>Recent Patients</h3></div>
+            <table class="patient-table">
+              <tr><th>ID</th><th>Name</th><th>Condition</th><th>AI Risk Score</th></tr>
+              <tr><td>#PT-092</td><td>Ahmed Al-Ghamdi</td><td>Stable</td><td><span class="risk low">12%</span></td></tr>
+              <tr><td>#PT-104</td><td>Khalid Y.</td><td>Observation</td><td><span class="risk medium">45%</span></td></tr>
+              <tr><td>#PT-112</td><td>Sara Fahad</td><td>ICU Admission</td><td><span class="risk high">94%</span></td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <script src="app.js"></script></body></html>
